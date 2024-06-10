@@ -1,0 +1,14 @@
+@use '@/styles/utils/typography';
+
+.container {
+    display: grid;
+    place-content: center;
+    min-height: var(--tw-h-screen);
+}
+
+.heading {
+    font-weight: var(--tw-font-semibold);
+    letter-spacing: var(--tw-tracking-tight);
+
+    @include typography.text-3xl;
+}

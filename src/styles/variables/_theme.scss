@@ -1,0 +1,63 @@
+:root {
+    --col-background: 0 0% 100%;
+    --col-foreground: 240 10% 3.9%;
+
+    --col-card: 0 0% 100%;
+    --col-card-foreground: 240 10% 3.9%;
+
+    --col-popover: 0 0% 100%;
+    --col-popover-foreground: 240 10% 3.9%;
+
+    --col-primary: 142.1 76.2% 36.3%;
+    --col-primary-foreground: 355.7 100% 97.3%;
+
+    --col-secondary: 240 4.8% 95.9%;
+    --col-secondary-foreground: 240 5.9% 10%;
+
+    --col-muted: 240 4.8% 95.9%;
+    --col-muted-foreground: 240 3.8% 46.1%;
+
+    --col-accent: 240 4.8% 95.9%;
+    --col-accent-foreground: 240 5.9% 10%;
+
+    --col-destructive: 0 84.2% 60.2%;
+    --col-destructive-foreground: 0 0% 98%;
+    --col-destructive-text: 0 84.2% 60.2%;
+
+    --col-border: 240 5.9% 90%;
+    --col-input: 240 5.9% 90%;
+    --col-ring: 142.1 76.2% 36.3%;
+
+    --radius: 0.75rem;
+}
+
+.dark {
+    --col-background: 20 14.3% 4.1%;
+    --col-foreground: 0 0% 95%;
+
+    --col-card: 24 9.8% 10%;
+    --col-card-foreground: 0 0% 95%;
+
+    --col-popover: 0 0% 9%;
+    --col-popover-foreground: 0 0% 95%;
+
+    --col-primary: 142.1 70.6% 45.3%;
+    --col-primary-foreground: 144.9 80.4% 10%;
+
+    --col-secondary: 240 3.7% 15.9%;
+    --col-secondary-foreground: 0 0% 98%;
+
+    --col-muted: 0 0% 15%;
+    --col-muted-foreground: 240 5% 64.9%;
+
+    --col-accent: 12 6.5% 15.1%;
+    --col-accent-foreground: 0 0% 98%;
+
+    --col-destructive: 0 62.8% 30.6%;
+    --col-destructive-foreground: 0 85.7% 97.3%;
+    --col-destructive-text: 0 62.8% 30.6%;
+
+    --col-border: 240 3.7% 15.9%;
+    --col-input: 240 3.7% 15.9%;
+    --col-ring: 142.4 71.8% 29.2%;
+}
