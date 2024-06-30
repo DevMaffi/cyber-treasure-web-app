@@ -25,3 +25,17 @@ docker exec _-it_ **[name]** bash
 ### start postgres db
 
 docker run -d --name cyber-treasure-app-db -e POSTGRES_PASSWORD=**[password]** -p6000:5432 postgres:16.3
+
+### psql main commands
+
+psql _-d_ **[db_name]** _-U_ **[user]**
+
+\q
+
+\l
+
+\c **[db_name]**
+
+\dt
+
+\d **[table_name]**

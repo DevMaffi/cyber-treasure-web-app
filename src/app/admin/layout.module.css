@@ -1,0 +1,4 @@
+.container {
+    min-height: 100vh;
+    margin-block: 3rem; /* 48px */
+}
