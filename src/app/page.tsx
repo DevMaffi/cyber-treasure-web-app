@@ -2,7 +2,7 @@ import React from 'react'
 
 import styles from './page.module.css'
 
-function Home() {
+function Store() {
     return (
         <main className={styles.container}>
             <h1 className={styles.heading}>Cyber-Treasure Web App</h1>
@@ -10,4 +10,4 @@ function Home() {
     )
 }
 
-export default Home
+export default Store
