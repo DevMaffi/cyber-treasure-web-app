@@ -40,7 +40,8 @@ lerna-debug.log*
 next-env.d.ts
 
 # editor directories and files
-/.vscode
+/.vscode/*
+!.vscode/settings.json
 /.idea
 /cache
 *.suo
