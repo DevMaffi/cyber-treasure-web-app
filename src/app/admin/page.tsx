@@ -12,7 +12,7 @@ async function AdminDashboard() {
     await wait(2000)
 
     return (
-        <main className={styles.container}>
+        <div className={styles.container}>
             <h1 className={styles.heading}>Admin Dashboard</h1>
             <h2 className={styles.subtle}>
                 Users <span>{count}</span>
@@ -22,7 +22,7 @@ async function AdminDashboard() {
                     <li key={user.id}>{user.username}</li>
                 ))}
             </ul>
-        </main>
+        </div>
     )
 }
 
