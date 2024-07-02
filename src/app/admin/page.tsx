@@ -2,10 +2,14 @@ import React from 'react'
 
 import { getUsers } from '@/app/admin/_actions/dashboard'
 
+import { wait } from '@/lib/utils'
+
 import styles from './page.module.css'
 
 async function AdminDashboard() {
     const { data, count } = await getUsers()
+
+    await wait(2000)
 
     return (
         <main className={styles.container}>
