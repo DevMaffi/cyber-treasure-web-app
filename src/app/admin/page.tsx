@@ -14,9 +14,9 @@ async function AdminDashboard() {
                 Users <span>{count}</span>
             </h2>
             <ul>
-                {data.map(user => {
-                    return <li key={user.id}>{user.username}</li>
-                })}
+                {data.map(user => (
+                    <li key={user.id}>{user.username}</li>
+                ))}
             </ul>
         </main>
     )
