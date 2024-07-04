@@ -3,6 +3,8 @@ import React from 'react'
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 
+import { RootProviders } from '@/providers'
+
 import '@/styles/globals.css'
 
 const inter = Inter({ subsets: ['latin'] })
@@ -21,7 +23,9 @@ function RootLayout(props: RootLayoutProps) {
     return (
         <html lang={'en'} suppressHydrationWarning>
             <body className={inter.className}>
-                <main>{children}</main>
+                <main>
+                    <RootProviders>{children}</RootProviders>
+                </main>
             </body>
         </html>
     )
