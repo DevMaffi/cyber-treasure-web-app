@@ -1,27 +1,25 @@
 import React from 'react'
 
-import { getUsers } from '@/app/admin/_actions/dashboard'
+import {
+    dehydrate,
+    HydrationBoundary,
+    QueryClient,
+} from '@tanstack/react-query'
 
-import { wait } from '@/lib/utils'
+import { getAllUsersOptions, UsersList } from '@/app/admin/_features/users'
 
 import styles from './page.module.css'
 
 async function AdminDashboard() {
-    const { data, count } = await getUsers()
-
-    await wait(2000)
+    const queryClient = new QueryClient()
+    await queryClient.prefetchQuery(getAllUsersOptions)
 
     return (
         <div className={styles.container}>
             <h1 className={styles.heading}>Admin Dashboard</h1>
-            <h2 className={styles.subtle}>
-                Users <span>{count}</span>
-            </h2>
-            <ul>
-                {data.map(user => (
-                    <li key={user.id}>{user.username}</li>
-                ))}
-            </ul>
+            <HydrationBoundary state={dehydrate(queryClient)}>
+                <UsersList />
+            </HydrationBoundary>
         </div>
     )
 }

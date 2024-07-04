@@ -7,13 +7,3 @@
 .heading {
     font-weight: 300;
 }
-
-.subtle {
-    font-size: 1.125rem; /* 18px */
-    line-height: 1.75rem; /* 28px */
-    font-weight: 600;
-}
-
-.subtle > span {
-    color: #adadad;
-}
