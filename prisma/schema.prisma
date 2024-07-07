@@ -22,7 +22,8 @@ model User {
   createdAt DateTime @default(now()) @map("created_at")
   updatedAt DateTime @updatedAt @map("updated_at")
 
-  profile Profile?
+  profile     Profile?
+  preferences Preferences?
 
   @@map("users")
 }
@@ -41,4 +42,24 @@ model Profile {
   updatedAt DateTime @updatedAt @map("updated_at")
 
   @@map("profiles")
+}
+
+model Preferences {
+  id          String  @id @default(cuid())
+  theme       Theme   @default(SYSTEM)
+  fluidLayout Boolean @default(true) @map("fluid_layout")
+
+  user   User   @relation(fields: [userId], references: [id], onDelete: Cascade)
+  userId String @unique @map("user_id")
+
+  createdAt DateTime @default(now()) @map("created_at")
+  updatedAt DateTime @updatedAt @map("updated_at")
+
+  @@map("preferences")
+}
+
+enum Theme {
+  LIGHT  @map("light")
+  DARK   @map("dark")
+  SYSTEM @map("system")
 }

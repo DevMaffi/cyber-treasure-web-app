@@ -9,8 +9,21 @@ export async function getAllUsers() {
     const [usersData, usersCount] = await Promise.all([
         db.user.findMany({
             include: {
-                profile: true,
+                profile: {
+                    select: {
+                        fullName: true,
+                        createdAt: true,
+                        updatedAt: true,
+                    },
+                },
+                preferences: true,
             },
+            orderBy: {
+                profile: {
+                    fullName: 'asc',
+                },
+            },
+            take: 10,
         }),
         db.user.count(),
     ])

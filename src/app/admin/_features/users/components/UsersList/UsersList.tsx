@@ -22,8 +22,7 @@ function UsersList() {
                 <ul>
                     {users.data.map(user => (
                         <li key={user.id}>
-                            {user.username}{' '}
-                            {user.profile && `(${user.profile.fullName})`}
+                            <pre>{JSON.stringify(user, null, 2)}</pre>
                         </li>
                     ))}
                 </ul>
