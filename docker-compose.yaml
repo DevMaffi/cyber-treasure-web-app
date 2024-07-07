@@ -1,0 +1,29 @@
+services:
+    web-app:
+        build:
+            context: .
+            dockerfile: Dockerfile
+            args:
+                DATABASE_URL: ${DATABASE_URL}
+        image: cyber-treasure-web-app:1.0
+        ports:
+            - '6060:3000'
+        environment:
+            PORT: 3000
+        depends_on:
+            - postgres-db
+        container_name: cyber-treasure-web-app-prod
+
+    postgres-db:
+        image: postgres:16.3
+        ports:
+            - '6061:5432'
+        environment:
+            POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+        container_name: cyber-treasure-app-db-prod
+        volumes:
+            - postgres-data:/var/lib/postgresql/data
+
+volumes:
+    postgres-data:
+        driver: local

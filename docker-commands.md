@@ -6,25 +6,33 @@ docker ps _-a_
 
 docker images
 
+docker build _-t_ **[image:version]** **[path]**
+
+docker rmi **[image_id]**
+
 docker network ls
 
 docker network create **[name]**
 
+docker network rm **[name]**
+
 docker pull **[image:version]**
 
-docker run _-d_ _--name_ **[name]** _-e_ **[env]** _-p_ **[host:container]** _--net_ **[name]** **[image:version]**
+docker run _-d_ _--name_ **[name]** _-e_ **[env]** _-p_ **[host:container]** _--net_ **[name]** _-v_ **[name:container_path]** **[image:version]**
 
-docker start **[name]**
+docker start **[container_id]**
 
-docker stop **[name]**
+docker stop **[container_id]**
 
-docker logs **[name]** _-f_ | _tail_ | _grep_
+docker logs **[container_id]** _-f_ | _tail_ | _grep_
 
-docker exec _-it_ **[name]** bash
+docker exec _-it_ **[container_id]** _bash_ | _sh_
+
+docker rm **[container_id]**
 
 ### start postgres db
 
-docker run -d --name cyber-treasure-app-db -e POSTGRES_PASSWORD=**[password]** -p6000:5432 postgres:16.3
+docker run -d --name cyber-treasure-app-db -e POSTGRES_PASSWORD=**[pwd]** -p 3001:5432 postgres:16.3
 
 ### psql main commands
 
@@ -39,3 +47,23 @@ psql _-d_ **[db_name]** _-U_ **[user]**
 \dt
 
 \d **[table_name]**
+
+### docker-compose main commands
+
+docker-compose _-f_ **[path]** up _-d_
+
+docker-compose _-f_ **[path]** start
+
+docker-compose _-f_ **[path]** stop
+
+docker-compose _-f_ **[path]** down
+
+### manage stage build
+
+dotenv -e .env.production.local -- docker-compose up -d
+
+dotenv -e .env.production.local -- docker-compose start
+
+dotenv -e .env.production.local -- docker-compose stop
+
+dotenv -e .env.production.local -- docker-compose down
