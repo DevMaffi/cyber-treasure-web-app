@@ -1,13 +1,14 @@
 import React from 'react'
-
 import {
     dehydrate,
     HydrationBoundary,
     QueryClient,
 } from '@tanstack/react-query'
-
-import { getAllUsersOptions, UsersList } from '@/app/admin/_features/users'
-
+import {
+    getAllUsersOptions,
+    RolesList,
+    UsersList,
+} from '@/app/admin/_features/jsonViewer'
 import styles from './page.module.css'
 
 async function AdminDashboard() {
@@ -17,6 +18,8 @@ async function AdminDashboard() {
     return (
         <div className={styles.container}>
             <h1 className={styles.heading}>Admin Dashboard</h1>
+            <RolesList />
+            <hr />
             <HydrationBoundary state={dehydrate(queryClient)}>
                 <UsersList />
             </HydrationBoundary>
