@@ -1,0 +1,28 @@
+.base {
+    animation: spin 1s linear infinite;
+}
+
+.default {
+    width: 1.75rem; /* 28px */
+    height: 1.75rem; /* 28px */
+}
+
+.sm {
+    width: 1.25rem; /* 20px */
+    height: 1.25rem; /* 20px */
+}
+
+.lg {
+    width: 3.5rem; /* 56px */
+    height: 3.5rem; /* 56px */
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}

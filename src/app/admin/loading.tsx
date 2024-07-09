@@ -1,13 +1,11 @@
 import React from 'react'
-
-import { LoaderCircle } from 'lucide-react'
-
+import { Loader } from '@/components'
 import styles from './loading.module.css'
 
 function AdminLoading() {
     return (
         <div className={styles.container}>
-            <LoaderCircle className={styles.loader} />
+            <Loader size={'lg'} />
         </div>
     )
 }
