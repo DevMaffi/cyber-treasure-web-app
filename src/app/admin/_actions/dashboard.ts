@@ -1,7 +1,7 @@
-'use server'
+"use server"
 
-import db from '@/lib/db'
-import { wait } from '@/lib/utils'
+import db from "@/lib/db"
+import { wait } from "@/lib/utils"
 
 export async function getAllUsers() {
     await wait(1000)
@@ -19,7 +19,7 @@ export async function getAllUsers() {
                 preferences: true,
             },
             orderBy: {
-                username: 'desc',
+                username: "desc",
             },
             take: 10,
         }),
@@ -67,23 +67,23 @@ export async function getAllRoles() {
                         assignedAt: true,
                     },
                     orderBy: {
-                        assignedAt: 'desc',
+                        assignedAt: "desc",
                     },
                 },
             },
             orderBy: [
                 {
                     user: {
-                        username: 'desc',
+                        username: "desc",
                     },
                 },
-                { assignedAt: 'desc' },
+                { assignedAt: "desc" },
             ],
             take: 10,
         }),
         db.moderator.count(),
         db.moderator.groupBy({
-            by: ['userId'],
+            by: ["userId"],
         }),
     ])
 

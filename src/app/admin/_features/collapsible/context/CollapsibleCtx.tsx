@@ -1,6 +1,6 @@
-'use client'
+"use client"
 
-import React, { useContext, useState } from 'react'
+import React, { useContext, useState } from "react"
 
 type CollapsibleCtxProps = Readonly<{
     isCollapsed: boolean
@@ -36,7 +36,7 @@ export function useCollapsibleCtx() {
 
     if (!context) {
         throw new Error(
-            'useCollapsibleCtx must be used within a CollapsibleCtxProvider',
+            "useCollapsibleCtx must be used within a CollapsibleCtxProvider",
         )
     }
 

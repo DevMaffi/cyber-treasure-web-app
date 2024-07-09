@@ -1,15 +1,15 @@
-'use client'
+"use client"
 
-import React from 'react'
-import { Loader } from '@/components'
-import { Heading, PrettyPrint } from '@/app/admin/_components'
+import React from "react"
+import { Loader } from "@/components"
+import { Heading, PrettyPrint } from "@/app/admin/_components"
 import {
     Collapsible,
     CollapsibleContent,
     CollapsibleEmpty,
     CollapsibleTrigger,
-} from '@/app/admin/_features/collapsible'
-import { useUsersQuery } from '@/app/admin/_features/jsonViewer/hooks/queries'
+} from "@/app/admin/_features/collapsible"
+import { useUsersQuery } from "@/app/admin/_features/jsonViewer/hooks/queries"
 
 function UsersList() {
     const { data: users, isFetching, error } = useUsersQuery()
@@ -22,7 +22,7 @@ function UsersList() {
                 <Heading>
                     Users <span>({users.count})</span>
                 </Heading>
-                <Loader size={'sm'} active={isFetching} />
+                <Loader size={"sm"} active={isFetching} />
                 <Collapsible initialCollapsed={false}>
                     <CollapsibleTrigger>
                         {isCollapsed => (

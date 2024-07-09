@@ -1,1 +1,1 @@
-export { default as CollapsibleEmpty } from './CollapsibleEmpty'
+export { default as CollapsibleEmpty } from "./CollapsibleEmpty"

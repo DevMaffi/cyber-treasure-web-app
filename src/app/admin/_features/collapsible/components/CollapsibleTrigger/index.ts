@@ -1,1 +1,1 @@
-export { default as CollapsibleTrigger } from './CollapsibleTrigger'
+export { default as CollapsibleTrigger } from "./CollapsibleTrigger"

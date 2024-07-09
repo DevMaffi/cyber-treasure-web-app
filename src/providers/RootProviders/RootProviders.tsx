@@ -1,7 +1,7 @@
-'use client'
+"use client"
 
-import React from 'react'
-import { QueryProvider } from '@/providers/QueryProvider'
+import React from "react"
+import { QueryProvider } from "@/providers/QueryProvider"
 
 type RootProvidersProps = Readonly<{
     children: React.ReactNode

@@ -1,8 +1,8 @@
-import React from 'react'
-import { cn } from '@/lib/utils'
-import { useCollapsibleCtx } from '@/app/admin/_features/collapsible/context'
+import React from "react"
+import { cn } from "@/lib/utils"
+import { useCollapsibleCtx } from "@/app/admin/_features/collapsible/context"
 
-type CollapsibleContentProps = Readonly<React.ComponentProps<'div'>>
+type CollapsibleContentProps = Readonly<React.ComponentProps<"div">>
 
 function CollapsibleContent(props: CollapsibleContentProps) {
     const { children, className, ...restProps } = props

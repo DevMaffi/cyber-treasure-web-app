@@ -1,1 +1,1 @@
-export { default as PrettyPrint } from './PrettyPrint'
+export { default as PrettyPrint } from "./PrettyPrint"

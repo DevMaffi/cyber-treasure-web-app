@@ -1,15 +1,15 @@
-import React from 'react'
+import React from "react"
 import {
     dehydrate,
     HydrationBoundary,
     QueryClient,
-} from '@tanstack/react-query'
+} from "@tanstack/react-query"
 import {
     getAllUsersOptions,
     RolesList,
     UsersList,
-} from '@/app/admin/_features/jsonViewer'
-import styles from './page.module.css'
+} from "@/app/admin/_features/jsonViewer"
+import styles from "./page.module.css"
 
 async function AdminDashboard() {
     const queryClient = new QueryClient()

@@ -1,11 +1,11 @@
-import React from 'react'
-import { Loader } from '@/components'
-import styles from './loading.module.css'
+import React from "react"
+import { Loader } from "@/components"
+import styles from "./loading.module.css"
 
 function AdminLoading() {
     return (
         <div className={styles.container}>
-            <Loader size={'lg'} />
+            <Loader size={"lg"} />
         </div>
     )
 }

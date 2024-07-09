@@ -1,11 +1,11 @@
-import React from 'react'
-import type { Metadata } from 'next'
-import styles from './layout.module.css'
+import React from "react"
+import type { Metadata } from "next"
+import styles from "./layout.module.css"
 
-export const dynamic = 'force-dynamic'
+export const dynamic = "force-dynamic"
 
 export const metadata: Metadata = {
-    title: 'Cyber-Treasure · Dashboard',
+    title: "Cyber-Treasure · Dashboard",
 }
 
 type AdminLayoutProps = Readonly<{

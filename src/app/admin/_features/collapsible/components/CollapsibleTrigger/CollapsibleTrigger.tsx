@@ -1,9 +1,9 @@
-import React from 'react'
-import { cn } from '@/lib/utils'
-import { useCollapsibleCtx } from '@/app/admin/_features/collapsible/context'
+import React from "react"
+import { cn } from "@/lib/utils"
+import { useCollapsibleCtx } from "@/app/admin/_features/collapsible/context"
 
 type CollapsibleTriggerProps = Readonly<
-    Omit<React.ComponentProps<'button'>, 'children'> & {
+    Omit<React.ComponentProps<"button">, "children"> & {
         children: ((isCollapsed: boolean) => React.ReactNode) | React.ReactNode
     }
 >
@@ -13,7 +13,7 @@ function CollapsibleTrigger(props: CollapsibleTriggerProps) {
 
     const { isCollapsed, setIsCollapsed } = useCollapsibleCtx()
 
-    const renderProp = typeof children === 'function' && children
+    const renderProp = typeof children === "function" && children
 
     function onCollapseToggle(
         evt: React.MouseEvent<HTMLButtonElement, MouseEvent>,

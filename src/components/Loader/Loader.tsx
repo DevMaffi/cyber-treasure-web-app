@@ -1,9 +1,9 @@
-import React from 'react'
-import { LoaderCircle } from 'lucide-react'
-import type { VariantProps } from 'class-variance-authority'
-import { cva } from 'class-variance-authority'
-import { cn } from '@/lib/utils'
-import styles from './Loader.module.css'
+import React from "react"
+import { LoaderCircle } from "lucide-react"
+import type { VariantProps } from "class-variance-authority"
+import { cva } from "class-variance-authority"
+import { cn } from "@/lib/utils"
+import styles from "./Loader.module.css"
 
 const loaderVariants = cva(styles.base, {
     variants: {
@@ -14,7 +14,7 @@ const loaderVariants = cva(styles.base, {
         },
     },
     defaultVariants: {
-        size: 'default',
+        size: "default",
     },
 })
 

@@ -1,8 +1,8 @@
-import React from 'react'
-import { cn } from '@/lib/utils'
+import React from "react"
+import { cn } from "@/lib/utils"
 
 type PrettyPrintProps<T> = Readonly<
-    Omit<React.ComponentProps<'pre'>, 'children'> & {
+    Omit<React.ComponentProps<"pre">, "children"> & {
         data: T
     }
 >

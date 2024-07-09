@@ -1,8 +1,8 @@
-import React from 'react'
-import { cn } from '@/lib/utils'
-import styles from './Heading.module.css'
+import React from "react"
+import { cn } from "@/lib/utils"
+import styles from "./Heading.module.css"
 
-type HeadingProps = Readonly<React.ComponentProps<'h2'>>
+type HeadingProps = Readonly<React.ComponentProps<"h2">>
 
 function Heading(props: HeadingProps) {
     const { children, className, ...restProps } = props

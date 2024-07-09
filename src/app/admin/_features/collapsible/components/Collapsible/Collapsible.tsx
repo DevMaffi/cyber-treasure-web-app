@@ -1,9 +1,9 @@
-import React from 'react'
-import { cn } from '@/lib/utils'
-import { CollapsibleCtxProvider } from '@/app/admin/_features/collapsible/context'
+import React from "react"
+import { cn } from "@/lib/utils"
+import { CollapsibleCtxProvider } from "@/app/admin/_features/collapsible/context"
 
 type CollapsibleProps = Readonly<
-    React.ComponentProps<'div'> & {
+    React.ComponentProps<"div"> & {
         initialCollapsed?: boolean
     }
 >

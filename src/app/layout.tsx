@@ -1,13 +1,13 @@
-import React from 'react'
-import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
-import { RootProviders } from '@/providers'
-import '@/styles/globals.css'
+import React from "react"
+import type { Metadata } from "next"
+import { Inter } from "next/font/google"
+import { RootProviders } from "@/providers"
+import "@/styles/globals.css"
 
-const inter = Inter({ subsets: ['latin'] })
+const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-    title: 'Cyber-Treasure · Games Store',
+    title: "Cyber-Treasure · Games Store",
 }
 
 type RootLayoutProps = Readonly<{
@@ -18,7 +18,7 @@ function RootLayout(props: RootLayoutProps) {
     const { children } = props
 
     return (
-        <html lang={'en'} suppressHydrationWarning>
+        <html lang={"en"} suppressHydrationWarning>
             <body className={inter.className}>
                 <main>
                     <RootProviders>{children}</RootProviders>
