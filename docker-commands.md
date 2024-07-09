@@ -50,7 +50,7 @@ psql _-d_ **[db_name]** _-U_ **[user]**
 
 ### docker-compose main commands
 
-docker-compose _-f_ **[path]** up _-d_
+docker-compose _-f_ **[path]** up _-d_ _--build_
 
 docker-compose _-f_ **[path]** start
 
@@ -60,7 +60,7 @@ docker-compose _-f_ **[path]** down
 
 ### manage stage build
 
-dotenv -e .env.production.local -- docker-compose up -d
+dotenv -e .env.production.local -- docker-compose up -d --build
 
 dotenv -e .env.production.local -- docker-compose start
 
