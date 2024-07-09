@@ -1,7 +1,5 @@
 import React from 'react'
-
 import type { Metadata } from 'next'
-
 import styles from './layout.module.css'
 
 export const dynamic = 'force-dynamic'

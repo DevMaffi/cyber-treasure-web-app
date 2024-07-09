@@ -10,9 +10,7 @@ function ListWrapper<T>(props: ListWrapperProps<T>) {
 
     const isEmpty = data.length === 0
 
-    if (isEmpty) {
-        return null
-    }
+    if (isEmpty) return null
 
     return children
 }
