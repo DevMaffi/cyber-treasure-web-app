@@ -19,9 +19,7 @@ export async function getAllUsers() {
                 preferences: true,
             },
             orderBy: {
-                profile: {
-                    fullName: 'asc',
-                },
+                username: 'desc',
             },
             take: 10,
         }),
