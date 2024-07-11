@@ -1,6 +1,5 @@
-import React from "react"
 import { Loader } from "@/components"
-import styles from "./loading.module.css"
+import styles from "@/app/admin/loading.module.css"
 
 function AdminLoading() {
     return (

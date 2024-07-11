@@ -1,4 +1,4 @@
 export {
     default as CollapsibleCtxProvider,
     useCollapsibleCtx,
-} from "./CollapsibleCtx"
+} from "./collapsible-ctx"

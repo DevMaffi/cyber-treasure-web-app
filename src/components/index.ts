@@ -1,2 +1,2 @@
-export { ListWrapper } from "./ListWrapper"
-export { Loader } from "./Loader"
+export { ListWrapper } from "./list-wrapper"
+export { Loader } from "./loader"

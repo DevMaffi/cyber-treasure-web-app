@@ -1,2 +1,2 @@
-export { Heading } from "./Heading"
-export { PrettyPrint } from "./PrettyPrint"
+export { Heading } from "./heading"
+export { PrettyPrint } from "./pretty-print"
