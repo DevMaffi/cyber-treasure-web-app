@@ -51,11 +51,10 @@ next-env.d.ts
 
 # development
 /.git
+/docs
 .dockerignore
 .gitignore
 .prettierignore
 .prettierrc.json
-code-review-templates.md
-docker-commands.md
 docker-compose.yaml
 Dockerfile
