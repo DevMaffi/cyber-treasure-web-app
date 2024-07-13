@@ -2,14 +2,6 @@
 
 ## snippets
 
-**arf**:
-
-```ts
-const $NAME$ = () => {
-    $SELECTION$
-}
-```
-
 **exportfrom**:
 
 ```ts
@@ -102,10 +94,13 @@ function on$NAME$() {
 ```
 ⇧⇧
 ^+⇧+N
+^+⇧+alt+N
 ^+⇧+A
 ^+⇧+F
 ^+F
 ^+R
+^+⇧+E
+^+E
 ```
 
 ### tool windows & tabs
@@ -122,6 +117,22 @@ alt+←/→
 ^+alt+enter
 ^+⇧+enter
 ^+⇧+↑/↓
+^+D
+```
+
+### suggestions
+
+```
+^+Q
+^+J
+^+space
+alt+enter
+```
+
+### clipboard
+
+```
+^+⇧+V
 ```
 
 ### code selection
@@ -131,12 +142,18 @@ alt+←/→
 ^+⇧+W
 ```
 
-### suggestions
+### reformat code
 
 ```
-^+Q
-^+J
-alt+enter
+^+alt+L
+^+⇧+alt+P
+```
+
+### explorer
+
+```
+f6
+⇧+f6
 ```
 
 ### find usages
@@ -150,4 +167,6 @@ alt+enter
 
 ```
 ^+alt+A
+^+D
+f4
 ```
