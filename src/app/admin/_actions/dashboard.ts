@@ -19,7 +19,7 @@ export async function getAllUsers() {
                 preferences: true,
             },
             orderBy: {
-                username: "desc",
+                name: "desc",
             },
             take: 10,
         }),
@@ -40,7 +40,7 @@ export async function getAllRoles() {
             include: {
                 user: {
                     select: {
-                        username: true,
+                        name: true,
                         email: true,
                     },
                 },
@@ -48,7 +48,7 @@ export async function getAllRoles() {
                     select: {
                         user: {
                             select: {
-                                username: true,
+                                name: true,
                                 email: true,
                             },
                         },
@@ -59,7 +59,7 @@ export async function getAllRoles() {
                     select: {
                         user: {
                             select: {
-                                username: true,
+                                name: true,
                                 email: true,
                             },
                         },
@@ -74,7 +74,7 @@ export async function getAllRoles() {
             orderBy: [
                 {
                     user: {
-                        username: "desc",
+                        name: "desc",
                     },
                 },
                 { assignedAt: "desc" },
