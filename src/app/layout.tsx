@@ -20,7 +20,10 @@ function RootLayout({
     children,
 }: RootLayoutProps) {
     return (
-        <html lang={"en"} suppressHydrationWarning>
+        <html
+            lang={"en"}
+            suppressHydrationWarning
+        >
             <body className={inter.className}>
                 <main>
                     <RootProvider>
