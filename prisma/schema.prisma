@@ -87,11 +87,11 @@ model Moderator {
   userId       String      @map("user_id")
   role         Role
   assignedAt   DateTime    @default(now()) @map("assigned_at")
-  assignedBy   Moderator?  @relation("AssignedRoles", fields: [assignedById], references: [id], onDelete: Restrict)
   assignedById String?     @map("assigned_by_id")
   assignees    Moderator[] @relation("AssignedRoles")
 
-  user User @relation(fields: [userId], references: [id], onDelete: Restrict)
+  user       User       @relation(fields: [userId], references: [id], onDelete: Restrict)
+  assignedBy Moderator? @relation("AssignedRoles", fields: [assignedById], references: [id], onDelete: Restrict)
 
   @@map("moderators")
 }
