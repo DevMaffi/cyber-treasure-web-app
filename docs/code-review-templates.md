@@ -5,7 +5,7 @@
 ### includes
 
 ```
-''
+'
 ```
 
 ```
@@ -21,7 +21,7 @@
 ```
 
 ```
-/>
+}/>
 ```
 
 ```
@@ -47,15 +47,27 @@ React
 ```
 
 ```
-Props =
-```
-
-```
 { type
 ```
 
 ```
 , type
+```
+
+```
+Props =
+```
+
+```
+async
+```
+
+```
+const {
+```
+
+```
+const [
 ```
 
 ```
@@ -69,31 +81,39 @@ console
 ### words [W]
 
 ```regexp
-\s\s
+\s
 ```
 
 ### regexp [.*]
 
 ```regexp
->{
+>\{
 ```
 
 ```regexp
->[a-z]
+>[a-z]+
 ```
 
 ```regexp
-\{[a-z]
+[a-z]+/>
 ```
 
 ```regexp
-[a-z]\}
+[a-z]+\([a-z]+
 ```
 
 ```regexp
-\[ [a-z]
+\{[a-z]+
 ```
 
 ```regexp
-[a-z] \]
+[a-z]+\}
+```
+
+```regexp
+\[ [a-z]+
+```
+
+```regexp
+[a-z]+ \]
 ```
