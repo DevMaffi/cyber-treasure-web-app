@@ -10,6 +10,7 @@
         "lint": "next lint",
         "db:push": "dotenv -e .env.local -- pnpm dlx prisma db push",
         "db:migrate": "dotenv -e .env.local -- pnpm dlx prisma migrate dev",
+        "db:reset": "dotenv -e .env.local -- pnpm dlx prisma migrate reset",
         "db:studio": "dotenv -e .env.local -- pnpm dlx prisma studio",
         "db:deploy": "pnpm dlx prisma migrate deploy && pnpm dlx prisma generate"
     },
